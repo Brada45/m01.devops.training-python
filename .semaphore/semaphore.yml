@@ -43,4 +43,4 @@ blocks:
             - checkout
             - 'cache restore '
             - make test
-            - cache store
+            - 'cache store '
