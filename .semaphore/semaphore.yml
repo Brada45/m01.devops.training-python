@@ -41,6 +41,6 @@ blocks:
         - name: "\U0001F7E2 Pytest"
           commands:
             - checkout
-            - cache restore
+            - 'cache restore '
             - make test
             - cache store
