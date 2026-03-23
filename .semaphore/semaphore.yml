@@ -28,7 +28,9 @@ blocks:
       jobs:
         - name: ✨ Lint and Format
           commands:
+            - cache restore
             - make lint
+            - cache store
   - name: "\U0001F9EA Test Suite"
     dependencies:
       - "\U0001F6E0️ Setup and Cache"
@@ -37,4 +39,6 @@ blocks:
       jobs:
         - name: "\U0001F7E2 Pytest"
           commands:
+            - cache restore
             - make test
+            - cache store
